@@ -8,7 +8,7 @@ These are two simple python programs, one for converting `prefix` (say 1.2.3.4/2
 The algorithm to convert prefix to range is quite simple. First change the mask to binary number (such as 111…11100...00), then keep the bits of the IP unchanged when the corresponding bits of mask are ‘1’. When the bits of mask are ‘0’, change the corresponding bits to ‘0’ to get the lower bound of IP and change corresponding bits to ‘1’ to get the upper bound of IP. 
 
 ---
-####`prefix2range.py` --- convert range to prefix
+####`range2prefix.py` --- convert range to prefix
 
 This algorithm is much more complex than that above. First, convert two IPs to binary number. Define the flag as the first different bit between the two IPs, IP1r1 as the furthest right bit of IP1.
 
